@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Assistant", sans-serif;
+  color: #444;
+}
+
+body {
+  background: #eee;
+  min-height: 100vh;
+  padding: 2%;
+}
+
+.card {
+  background: #fff;
+  width: min(95%, 600px);
+  margin: 100px auto;
+  padding: 2rem;
+  display: grid;
+  gap: 4rem;
+  position: relative;
+}
+.card::after, .card::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background: #ff2752;
+  position: absolute;
+  z-index: -1;
+}
+.card::before {
+  top: -1rem;
+  left: -1rem;
+}
+.card::after {
+  bottom: -1rem;
+  right: -1rem;
+}
+.card_top {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.card_top--left {
+  background: #ff2752;
+  color: #fff;
+  padding: 0 1rem;
+  align-self: stretch;
+  display: grid;
+  place-content: center;
+}
+.card_top--left span {
+  font-weight: 600;
+  height: 100%;
+  font-size: 4rem;
+  color: #fff;
+}
+.card_top--right {
+  font-size: 1.5rem;
+}
+.card_bottom {
+  display: grid;
+  gap: 1rem;
+}
+.card_bottom h2 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+}
+.card_bottom p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}/*# sourceMappingURL=style.css.map */
